@@ -1,0 +1,198 @@
+{
+	"info": {
+		"_postman_id": "66f83ce8-d340-4e53-b943-38576ac05687",
+		"name": "OnlineShopping",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/getProductByName?productName=sunsilk Copy",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/getProductByName?productName=sunsilk",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getProductByName"
+					],
+					"query": [
+						{
+							"key": "productName",
+							"value": "sunsilk"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/addProduct",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productName\" : \"Fiama Shower Gel\",\r\n    \"productDescription\": \"Body wash\",\r\n    \"price\" : 300,\r\n    \"features\" : \"Makes your skin healthy and shiny\",\r\n    \"productStatus\" : \"Out of stock\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/addProduct",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"addProduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n    \"firstName\" : \"Vasvi\",\r\n    \"lastName\" : \"Chauhan\",\r\n    \"email\" : \"vcvasvi@gmail.com\",\r\n    \"loginId\" : \"vcvasvi\",\r\n    \"password\" : \"temp123\",\r\n    \"contact\" : \"7017068783\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/getProducts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/getProducts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"getProducts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/updateProductStatus?productName=sunsilk",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productName\": \"sunsilk\",\r\n        \"productDescription\": \"Shampoo/ Hair Wash\",\r\n        \"price\": 100.4,\r\n        \"features\": \"Makes your hair healthy and shiny\",\r\n        \"productStatus\": \"Hurry up to purchase\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/updateProductStatus?productName=sunsilk",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"updateProductStatus"
+					],
+					"query": [
+						{
+							"key": "productName",
+							"value": "sunsilk"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/deleteProductByName?productName=Sunsilk",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/deleteProductByName?productName=Sunsilk",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"deleteProductByName"
+					],
+					"query": [
+						{
+							"key": "productName",
+							"value": "Sunsilk"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/login",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "loginId",
+						"value": "vcvas",
+						"type": "default"
+					},
+					{
+						"key": "password",
+						"value": "temp123",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
